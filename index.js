@@ -47,13 +47,15 @@ const addNewGoal = () => {
     const newGoal = document.createElement('li');
     newGoal.textContent = goalInput;
     goalList.appendChild(newGoal);
-    goalInput.value = '';
+    document.querySelector("#goalInput").value = "";
         }
     }
 };
 
+
 // Add event listener to the goal submit button
 document.querySelector('#submitGoal').addEventListener('click', addNewGoal);
+
 
 ///
 let waterIntake = 0;
